@@ -141,7 +141,8 @@ class GameViewController: UIViewController {
     func setupCamera() {
         cameraNode.camera = SCNCamera()
         cameraNode.position = SCNVector3(0, 10, 0)
-        cameraNode.eulerAngles = SCNVector3(x: -toRadians(angle: 60), y: toRadians(angle: 20), z: 0)  // point at floor
+        cameraNode.eulerAngles = SCNVector3(x: -toRadians(angle: 60), y: toRadians(angle: 20), z: 0)
+        // point at floor
         scene.rootNode.addChildNode(cameraNode)
     }
     
