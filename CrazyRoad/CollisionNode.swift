@@ -52,7 +52,6 @@ class CollisionNode: SCNNode {
         addChildNode(front)
         addChildNode(right)
         addChildNode(left)
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

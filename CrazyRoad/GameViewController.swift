@@ -226,15 +226,6 @@ class GameViewController: UIViewController {
     }
     
     func removeUnusedLanes() {
-//        for child in mapNode.childNodes {
-//            if !sceneView.isNode(child, insideFrustumOf: cameraNode) &&
-//                child.worldPosition.z > playerNode.worldPosition.z {
-//                child.removeFromParentNode()
-//                lanes.removeFirst()
-//                print("Removed unused lanes")
-//            }
-//        }
-        
         for child in mapNode.childNodes where !sceneView.isNode(child, insideFrustumOf: cameraNode) &&
             child.worldPosition.z > playerNode.worldPosition.z
         {
